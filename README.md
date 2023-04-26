@@ -1,2 +1,1 @@
-# sometimes.naive
-a script about config and manage naiveproxy
+Original repository: https://github.com/klzgrad/naiveproxy/
