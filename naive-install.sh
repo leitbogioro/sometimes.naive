@@ -1,7 +1,6 @@
-# dnf install net-tools -y
-# apt install net-tools -y
+#!/bin/bash
 apt-get update
-apt-get install sudo ca-certificates apt-transport-https jq vim vim-gtk3 libnet-ifconfig-wrapper-perl socat fail2ban lrzsz python3 cron curl wget unzip unrar-free dnsutils net-tools iptables iptables-persistent psmisc ncdu sosreport lsof nmap traceroute debian-keyring debian-archive-keyring libnss3 tar -y
+apt-get install sudo ca-certificates apt-transport-https jq vim socat fail2ban lrzsz python3 cron curl wget unzip dnsutils net-tools iptables iptables-persistenttar -y
 sed -i '/^mozilla\/DST_Root_CA_X3/s/^/!/' /etc/ca-certificates.conf && update-ca-certificates -f
 wget --no-check-certificate -qO ~/go_version.html 'https://go.dev/dl/'
 tmpGoSubVer=""
